@@ -231,7 +231,7 @@ section .courses .first-course {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 50px 0 50px;
+  padding-left: 50px;
   background: linear-gradient(255.18deg, rgba(49, 0, 247, 0.82) 40.47%, #5E61FF 67.26%);
   border-radius: 32px;
 }
@@ -279,6 +279,7 @@ section .courses .first-course .course__text p {
 section .courses .first-course .course__text .advances {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
 section .courses .first-course .course__text .advances div {
   font-family: "Inter";
@@ -311,7 +312,7 @@ section .courses .second-course {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0 50px 0 50px;
+  padding-left: 50px;
   background: linear-gradient(255.18deg, rgba(49, 0, 247, 0.82) 40.47%, #5E61FF 67.26%);
   border-radius: 32px;
 }
@@ -359,6 +360,7 @@ section .courses .second-course .course__text p {
 section .courses .second-course .course__text .advances {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
 section .courses .second-course .course__text .advances div {
   font-family: "Inter";
@@ -385,4 +387,74 @@ section .courses .second-course .course__text .course__btns button {
 section .courses .second-course img {
   width: 665px;
   height: 426px;
+}
+section .reviews {
+  margin-top: 70px;
+}
+section .reviews .parent {
+  background: linear-gradient(111.72deg, rgba(49, 0, 247, 0.8) 21.17%, rgba(82, 84, 255, 0.92) 41.1%);
+  border-radius: 32px;
+  padding: 70px 30px 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+section .reviews .parent .div {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 290px;
+}
+section .reviews .parent .div1 {
+  grid-area: 1/1/2/2;
+  height: 150.72px;
+}
+section .reviews .parent .div2 {
+  grid-area: 1/2/2/3;
+}
+section .reviews .parent .div3 {
+  grid-area: 1/3/3/4;
+}
+section .reviews .parent .div4 {
+  grid-area: 1/4/2/5;
+}
+section .reviews .parent .div5 {
+  grid-area: 2/2/4/3;
+}
+section .reviews .parent .div6 {
+  grid-area: 3/3/4/4;
+}
+section .reviews .parent .div7 {
+  grid-area: 2/4/4/5;
+}
+section .reviews .parent .div8 {
+  grid-area: 2/1/4/2;
+}
+section .reviews img {
+  position: relative;
+  height: 130px;
+  width: 130px;
+  bottom: 650px;
+  left: 890px;
+}
+section .reviews .btns__reviews {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+section .reviews .btns__reviews button {
+  position: absolute;
+  width: 300px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+section .reviews .btns__reviews .second-slide {
+  left: 460px;
+}
+section .reviews .btns__reviews .third-slide {
+  left: 770px;
+}
+section .reviews .btns__reviews .fourth-slide {
+  right: 140px;
 }/*# sourceMappingURL=style.css.map */
