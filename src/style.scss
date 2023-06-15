@@ -1,2 +1,72 @@
 @import './helpers/nullstyle.css';
 @import './helpers/fonts.css';
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    nav{
+        @include flex;
+        justify-content: space-around;
+        background-color: #88C6FE;
+        padding: 10px 0;
+        .logo{
+            @include flex;
+            img{
+                width: 55px;
+                height: 55px;
+            }
+            h2{
+                margin-left: 15px;
+                font-family: 'MuseoModerno';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 64px;
+                color: #3100F7;
+            }
+        }
+        ul{
+            @include flex;
+            flex-direction: row;
+            gap:40px;
+            li{
+                @include flex;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.1rem;
+                line-height: 30px;
+                a{
+                    color:#000000;
+                }
+                svg{
+                    align-items: center;
+                }
+            }
+        }
+        .btns{
+            button{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 0.9rem;
+                line-height: 22px;
+                color: #191816;
+
+                background: #EFF0F5;
+                border-radius: 15px;
+                padding: 11px 28px;
+                transition: all 1s;
+                margin-left: 10px;
+            }
+            button:hover{
+                background-color: #3100F7;
+                color: #EFF0F5;
+            }
+        }
+    }
+}

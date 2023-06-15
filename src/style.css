@@ -1,2 +1,72 @@
 @import './helpers/nullstyle.css';
-@import './helpers/fonts.css';/*# sourceMappingURL=style.css.map */
+@import './helpers/fonts.css';
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: #88C6FE;
+  padding: 10px 0;
+}
+header nav .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header nav .logo img {
+  width: 55px;
+  height: 55px;
+}
+header nav .logo h2 {
+  margin-left: 15px;
+  font-family: "MuseoModerno";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 64px;
+  color: #3100F7;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+header nav ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+header nav ul li a {
+  color: #000000;
+}
+header nav ul li svg {
+  align-items: center;
+}
+header nav .btns button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 22px;
+  color: #191816;
+  background: #EFF0F5;
+  border-radius: 15px;
+  padding: 11px 28px;
+  transition: all 1s;
+  margin-left: 10px;
+}
+header nav .btns button:hover {
+  background-color: #3100F7;
+  color: #EFF0F5;
+}/*# sourceMappingURL=style.css.map */
