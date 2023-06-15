@@ -1,25 +1,31 @@
 @import './helpers/nullstyle.css';
 @import './helpers/fonts.css';
-header nav {
+.wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+nav {
   justify-content: space-around;
   background-color: #88C6FE;
   padding: 10px 0;
 }
-header nav .logo {
+nav .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-header nav .logo img {
+nav .logo img {
   width: 55px;
   height: 55px;
 }
-header nav .logo h2 {
+nav .logo h2 {
   margin-left: 15px;
   font-family: "MuseoModerno";
   font-style: normal;
@@ -28,7 +34,7 @@ header nav .logo h2 {
   line-height: 64px;
   color: #3100F7;
 }
-header nav ul {
+nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,7 +42,7 @@ header nav ul {
   flex-direction: row;
   gap: 40px;
 }
-header nav ul li {
+nav ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,13 +53,13 @@ header nav ul li {
   font-size: 1.1rem;
   line-height: 30px;
 }
-header nav ul li a {
+nav ul li a {
   color: #000000;
 }
-header nav ul li svg {
+nav ul li svg {
   align-items: center;
 }
-header nav .btns button {
+nav .btns button {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -66,7 +72,62 @@ header nav .btns button {
   transition: all 1s;
   margin-left: 10px;
 }
-header nav .btns button:hover {
+nav .btns button:hover {
   background-color: #3100F7;
   color: #EFF0F5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 154px;
+  margin-top: 40px;
+}
+header .header__texts {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+header .header__texts h1 {
+  font-family: "MuseoModerno";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 72px;
+  background: linear-gradient(207.26deg, #3100F7 39.57%, #5E61FF 122.85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+header .header__texts h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 34px;
+  color: #000000;
+}
+header .header__texts h2 p {
+  font-size: 1.5rem;
+}
+header .header__texts h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 39px;
+  color: #000000;
+}
+header .header__texts button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 44px;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, rgba(49, 0, 247, 0.71) 0%, #562EF8 122.9%);
+  border-radius: 16px;
+  padding: 12px 28px;
 }/*# sourceMappingURL=style.css.map */
