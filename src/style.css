@@ -219,4 +219,170 @@ section .filter__arrows button svg {
   width: 50.25px;
   height: 50.25px;
   color: #fff;
+}
+section .courses {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 50px;
+}
+section .courses .first-course {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 0 50px;
+  background: linear-gradient(255.18deg, rgba(49, 0, 247, 0.82) 40.47%, #5E61FF 67.26%);
+  border-radius: 32px;
+}
+section .courses .first-course .course__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+section .courses .first-course .course__text h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 48px;
+  display: inline-block;
+  color: #FFFFFF;
+}
+section .courses .first-course .course__text .dot {
+  position: relative;
+  bottom: 7px;
+  margin: 0 10px;
+}
+section .courses .first-course .course__text h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #FFFFFF;
+  display: inline;
+  position: relative;
+  right: 80px;
+  bottom: 30px;
+  -webkit-text-decoration: line-through red;
+          text-decoration: line-through red;
+}
+section .courses .first-course .course__text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+section .courses .first-course .course__text .advances {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .courses .first-course .course__text .advances div {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 66px;
+  padding: 7px 18px;
+}
+section .courses .first-course .course__text .course__btns button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFF4F4;
+  background: #14173F;
+  border-radius: 16px;
+  padding: 11px 20px;
+}
+section .courses .first-course img {
+  width: 615px;
+  height: 426px;
+}
+section .courses .second-course {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 0 50px;
+  background: linear-gradient(255.18deg, rgba(49, 0, 247, 0.82) 40.47%, #5E61FF 67.26%);
+  border-radius: 32px;
+}
+section .courses .second-course .course__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+section .courses .second-course .course__text h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 48px;
+  display: inline-block;
+  color: #FFFFFF;
+}
+section .courses .second-course .course__text .dot {
+  position: relative;
+  bottom: 7px;
+  margin: 0 10px;
+}
+section .courses .second-course .course__text h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #FFFFFF;
+  display: inline;
+  position: relative;
+  right: 80px;
+  bottom: 30px;
+  -webkit-text-decoration: line-through red;
+          text-decoration: line-through red;
+}
+section .courses .second-course .course__text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+section .courses .second-course .course__text .advances {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .courses .second-course .course__text .advances div {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 66px;
+  padding: 7px 18px;
+}
+section .courses .second-course .course__text .course__btns button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  color: #FFF4F4;
+  background: #14173F;
+  border-radius: 16px;
+  padding: 11px 20px;
+}
+section .courses .second-course img {
+  width: 665px;
+  height: 426px;
 }/*# sourceMappingURL=style.css.map */
