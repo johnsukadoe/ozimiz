@@ -21,6 +21,7 @@ nav{
         img{
             width: 55px;
             height: 55px;
+
         }
         h2{
             margin-left: 15px;
@@ -30,6 +31,7 @@ nav{
             font-size: 2rem;
             line-height: 64px;
             color: #3100F7;
+
         }
     }
     ul{
@@ -548,3 +550,60 @@ section{
 
 
 
+footer{
+    background: #5E61FF;
+    margin-top: 70px;
+    padding: 100px 0;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #000000;
+    .logo__footer{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        img{
+            display: inline;
+            vertical-align: middle;
+        }
+        h3{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            color: #000000;
+            display: inline;
+        }
+    }
+    .links-to-soc{
+        display: flex;
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    div{
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            margin-top: 15px;
+            li{
+                a{
+                    color:#000000;
+                    font-size: 16px;
+                    border-bottom: 2px solid rgba(0, 0, 0, 0);
+                    transition: all 1s;
+                }
+                a:hover{
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.974);
+                }
+            }
+        }
+    }
+}

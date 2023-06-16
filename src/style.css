@@ -532,4 +532,55 @@ section .consultation form div label {
 section .consultation form div label a {
   color: #fff;
   text-decoration: underline;
+}
+
+footer {
+  background: #5E61FF;
+  margin-top: 70px;
+  padding: 100px 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+footer .logo__footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+footer .logo__footer img {
+  display: inline;
+  vertical-align: middle;
+}
+footer .logo__footer h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  display: inline;
+}
+footer .links-to-soc {
+  display: flex;
+  margin-top: 20px;
+  gap: 15px;
+}
+footer div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+footer div ul li a {
+  color: #000000;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 1s;
+}
+footer div ul li a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.974);
 }/*# sourceMappingURL=style.css.map */
