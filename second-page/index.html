@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <a class="logo" href="#">
+                <img src="../images/logo.png" alt="">
+                <h2>Ozimiz.kz</h2>
+            </a>
+            
+            <ul class="links">
+                <li>Программы <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m7 10l5 5m0 0l5-5"/></svg></li>
+                <li><a href="#"><!--link-->Отзывы</a></li>
+                <li><a href="#"><!--link-->О нас</a></li>
+            </ul>
+            <div class="btns">
+                <button id="login">Войти</button>
+                <button id="signin">Регистрация</button>
+                <div class="modal-login">
+                    <div class="login__container">
+                        <h2>С возвращением!</h2>
+                        <form action="#" method="post">
+                            <input type="email" placeholder="Эллектронная почта">
+
+                            <input class="password" type="password" placeholder="Пароль">
+
+                            
+                            <p id="forgot-password" class="forgot-password">Забыли пароль?</p>
+                            <button class="login-to-account">Войти</button>
+                            
+                            
+                        </form>
+                        <div>
+                            <p>Еще не зарегистрировались?</p><button id="create-account" class="create-account">Cоздать аккаунт</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-signin">
+                    <div class="signin__container">
+                        <h2>РЕГИСТРАЦИЯ</h2>
+                        <form action="#" method="post">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Фамилия">
+                            <div>
+                                <label class="label__birthday" for="birthday">День рождения:</label>
+                                <input id="birthday" type="date">
+                            </div>
+                            
+                            <input type="tel" placeholder="Номер Телефона">
+                            <input type="email" placeholder="Email">
+
+                            <input class="password" type="password" placeholder="Пароль">
+                            <button class="login-to-account">Создать аккаунт</button>
+                            
+                            <div>
+                                <p>У вас уже есть учетная запись?</p><p class="go-to-account">Войти</p>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <section>
+        <div class="about-course">
+            <div class="about-course__text">
+                <h1>BEGINER</h1>
+                <div class="description">Вы узнаете, как создавать полноценные веб-сайты и веб-приложения с нуля. Освоите HTML, CSS и  JavaScript, познакомьтесь с фреймворками и станьте востребованным веб-разработчиком. Даже если вы не программировали его раньше.</div>
+                <div>
+                    <button class="price">29990тг</button>
+                    <button>Записаться на курс<svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="currentColor" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5Z"/><path fill="currentColor" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></button>
+                </div>
+            </div>
+            
+            <img src="../images/beginner-image.png" alt="">
+        </div>
+
+        <div class="recent-potok">
+            <h2>Ближайший поток</h2>
+
+            <div class="dates">
+                <div class="start-date">
+                    <h3>НАЧАЛО</h3>
+                    <p id="start-date">20.06.2023</p>
+                </div>
+                <div class="end-date">
+                    <h3>КОНЕЦ</h3>
+                    <p id="end-date">20.08.2023</p>
+                </div>
+                <div class="places-of-people">
+                    <h3>ОСТАЛОСЬ МЕСТ</h3>
+                    <p id="places-of-people">25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div>
+                <div class="logo__footer">
+                    <a href="#">
+                        <img src="../images/logo-footer.png" alt="">
+                        <h3>Ozimiz.kaz</h3>
+                    </a>
+                </div>
+                <div class="links-to-soc">
+                    <a href="#"><img src="../images/instagram.svg" alt=""></a>
+                    <a href="#"><img src="../images/telegram.svg" alt=""></a>
+                    <a href="#"><img src="../images/whatsapp.svg" alt=""></a>
+                    <a href="#"><img src="../images/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="about">
+                Мы и наши проекты
+                <ul>
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">СМИ о нас</a></li>
+                    <li><a href="#">Наш блог</a></li>
+                </ul>
+            </div>
+            <div class="all-course">
+                Наши курсы и студенты
+                <ul>
+                    <li><a href="#">Все курсы</a></li>
+                    <li><a href="#">Отзывы студентов</a></li>
+                </ul>
+            </div>
+            <div class="docs">
+                Документы
+                <ul>
+                    <li><a href="#">Договор публичной оферты</a></li>
+                    <li><a href="#">Политика обработки персональных данных</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="js-containers">
+            <div class="modal-sended-email">
+                <div class="sended-email-container">
+                    <img src="../images/confirm-email.svg" alt="">
+                    <h3>Отправлено электронное письмо</h3>
+                    <p>Мы отправили электронное письмо со ссылкой для возврата в свой аккаунт.</p>
+                    
+                    <button>Ok</button>
+                    
+                    <div>
+                        <span>Письмо не пришло?</span>
+                        <button>Отправить еще раз</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-trouble-account">
+                <div class="trouble-account-container">
+                    <img src="../images/trouble-email.svg" alt="">
+                    <h3>Trouble with logging in?</h3>
+                    <p>Enter your email address or phone number, and we'll send you a link to get back into your account.</p>
+                    
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Email address or phone number">
+
+                        <button id="send-login-link">Send Login Link</button>
+                    </form>
+
+                    
+                    <div>
+                        <span>Remembered password?</span>
+                        <p id="backToLogin">Back to login</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

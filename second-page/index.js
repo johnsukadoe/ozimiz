@@ -1,4 +1,11 @@
-
+window.onclick = function(event) {
+    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
+        modalLogin.style.display = "none";
+        modalSignin.style.display = "none";
+        modalTroubleAccount.style.display="none";
+        modalSendedEmail.style.display="none";
+    }
+}
 
 const filterBtns = document.querySelectorAll("filterBtns");
 
@@ -59,18 +66,12 @@ function handleBackToLoginBtn(){
 }
 
 const modalSendedEmail = document.querySelector(".modal-sended-email");
-
-
-window.onclick = function(event) {
-    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
-        modalLogin.style.display = "none";
-        modalSignin.style.display = "none";
-        modalTroubleAccount.style.display="none";
-        modalSendedEmail.style.display="none";
-    }
-}
+const sendLoginLink = document.querySelector(".send-login-link");
+sendLoginLink.addEventListener('click', handleModalSendedEmail);
 
 function handleModalSendedEmail(){
     modalSendedEmail.style.display = "block";
     modalTroubleAccount.style.display="none";
 }
+
+
