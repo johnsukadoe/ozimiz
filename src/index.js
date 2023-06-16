@@ -1,11 +1,18 @@
 window.onclick = function(event) {
-    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount || event.target == modalConfirmAccount ) {
+    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
         modalLogin.style.display = "none";
         modalSignin.style.display = "none";
         modalTroubleAccount.style.display="none";
         modalSendedEmail.style.display="none";
-        modalConfirmAccount.style.display= "none";
     }
+}
+
+const filterBtns = document.querySelectorAll("filterBtns");
+
+filterBtns.forEach(el=> el.addEventListener("click", handleFilterBtn));
+function handleFilterBtn(event){
+    console.log("hoho")
+    event.target.classList.add("filter__btn-active");
 }
 
 const loginBtn = document.querySelector("#login");
@@ -67,10 +74,4 @@ function handleModalSendedEmail(){
     modalTroubleAccount.style.display="none";
 }
 
-const loginToAccountBtn = document.querySelector(".login-to-account");
-const modalConfirmAccount = document.querySelector(".modal-confirm-account");
-loginToAccountBtn.addEventListener("click", handleModalConfirmAccount);
-function handleModalConfirmAccount(){
-    modalConfirmAccount.style.display= "block";
-    modalSignin.style.display = "none";
-}
+
