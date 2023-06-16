@@ -1,4 +1,9 @@
-
+const modalCategories = document.querySelector(".modal-categories");
+const categoriesBtn = document.querySelector("#categories");
+categoriesBtn.addEventListener("click", handlemodalCategories);
+function handlemodalCategories(){
+    modalCategories.style.display = 'block';
+}
 
 const filterBtns = document.querySelectorAll("filterBtns");
 
@@ -62,11 +67,12 @@ const modalSendedEmail = document.querySelector(".modal-sended-email");
 
 
 window.onclick = function(event) {
-    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
+    if (event.target == modalCategories || event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
         modalLogin.style.display = "none";
         modalSignin.style.display = "none";
         modalTroubleAccount.style.display="none";
         modalSendedEmail.style.display="none";
+        modalCategories.style.display = "none";
     }
 }
 
