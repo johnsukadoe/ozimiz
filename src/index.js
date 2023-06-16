@@ -1,5 +1,5 @@
 window.onclick = function(event) {
-    if (event.target == modalConfirmAccount || event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
+    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount || event.target == modalConfirmAccount ) {
         modalLogin.style.display = "none";
         modalSignin.style.display = "none";
         modalTroubleAccount.style.display="none";
