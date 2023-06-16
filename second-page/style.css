@@ -154,9 +154,15 @@ section .recent-potok .dates {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  justify-content: space-around;
+  gap: 150px;
+}
+section .recent-potok .dates div {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
 }
 section .recent-potok .dates div h3 {
+  padding-top: 20px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -173,9 +179,19 @@ section .recent-potok .dates div p {
   line-height: 26px;
   color: #000000;
   text-align: center;
+  padding-bottom: 20px;
 }
 section .recent-potok .dates .places-of-people p {
   color: red;
+}
+section .recent-potok .dates .end-date {
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  padding: 0 150px;
+  height: 70px;
+}
+section .recent-potok .dates .end-date h3 {
+  padding-top: 0;
 }
 
 footer {

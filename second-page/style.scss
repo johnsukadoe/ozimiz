@@ -147,10 +147,14 @@ section{
         .dates{
             border: 2px solid #000000;
             border-radius: 32px;  
-            @include flex;  
-            justify-content: space-around;        
+            @include flex;    
+            gap: 150px;     
             div{
+                display: flex;
+                gap: 15px;
+                flex-direction: column;
                 h3{
+                    padding-top: 20px;
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 700;
@@ -167,12 +171,22 @@ section{
                     line-height: 26px;
                     color: #000000;
                     text-align: center;
+                    padding-bottom: 20px;
                 }
                 
             }
             .places-of-people{
                 p{
                     color:red;
+                }
+            }
+            .end-date{
+                border-left: 2px solid #000000;
+                border-right: 2px solid #000000;
+                padding: 0 150px;
+                height: 70px;
+                h3{
+                    padding-top: 0;
                 }
             }
         }
