@@ -1,11 +1,4 @@
-window.onclick = function(event) {
-    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
-        modalLogin.style.display = "none";
-        modalSignin.style.display = "none";
-        modalTroubleAccount.style.display="none";
-        modalSendedEmail.style.display="none";
-    }
-}
+
 
 const filterBtns = document.querySelectorAll("filterBtns");
 
@@ -66,8 +59,16 @@ function handleBackToLoginBtn(){
 }
 
 const modalSendedEmail = document.querySelector(".modal-sended-email");
-const sendLoginLink = document.querySelector(".send-login-link");
-sendLoginLink.addEventListener('click', handleModalSendedEmail);
+
+
+window.onclick = function(event) {
+    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
+        modalLogin.style.display = "none";
+        modalSignin.style.display = "none";
+        modalTroubleAccount.style.display="none";
+        modalSendedEmail.style.display="none";
+    }
+}
 
 function handleModalSendedEmail(){
     modalSendedEmail.style.display = "block";
@@ -75,3 +76,37 @@ function handleModalSendedEmail(){
 }
 
 
+const acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+
+function countdown(days, hours, minutes, seconds) {
+            var countdownElement = document.getElementById("countdown");
+            var totalSeconds = days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds;
+            var interval = setInterval(function() {
+                var daysRemaining = Math.floor(totalSeconds / (24 * 60 * 60));
+                var hoursRemaining = Math.floor((totalSeconds / (60 * 60)) % 24);
+                var minutesRemaining = Math.floor((totalSeconds / 60) % 60);
+                var secondsRemaining = Math.floor(totalSeconds % 60);
+                countdownElement.innerText = daysRemaining + " дней, " + hoursRemaining + " часов, " + minutesRemaining + " минут, " + secondsRemaining + " секунд";
+                if (totalSeconds <= 0) {
+                    clearInterval(interval);
+                    countdownElement.innerText = "Время истекло!";
+                }
+                totalSeconds--;
+            }, 1000);
+        }
+
+        countdown(2, 5, 30, 10);
