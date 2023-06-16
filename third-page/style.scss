@@ -282,23 +282,33 @@ section{
         }
     }
     .preload-preview{
-        .myImg {
-            display: none; 
-          }
-        
-          .custom-file-upload {
-            border: 1px solid #ccc;
-            display: inline-block;
-            padding: 6px 12px;
-            cursor: pointer;
-            background-color: #f2f2f2;
-            color: #333;
-            border-radius: 4px;
-          }
-        
-          .custom-file-upload:hover {
-            background-color: #e6e6e6;
-          }
+        background-color: #fff;
+        margin: 15px;
+        border-radius: 13px;
+        padding: 15px;
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    #submit{
+    background: #14173F;
+    border-radius: 60px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
     }
 }
 
