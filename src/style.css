@@ -457,4 +457,79 @@ section .reviews .btns__reviews .third-slide {
 }
 section .reviews .btns__reviews .fourth-slide {
   right: 140px;
+}
+section .consultation {
+  background: linear-gradient(264.19deg, #6062FF 40.63%, rgba(49, 0, 247, 0.81) 73.63%);
+  border-radius: 32px;
+}
+section .consultation h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 44px;
+  text-align: center;
+  padding-top: 40px;
+  color: #FFFFFF;
+}
+section .consultation form {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: table;
+  width: 100%;
+  padding-bottom: 40px;
+}
+section .consultation form input {
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  padding: 17px 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: #fff;
+}
+section .consultation form button {
+  margin-left: 10px;
+  background-color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 52px;
+  border-radius: 6px;
+  padding: 0 8px;
+  color: #000000;
+}
+section .consultation form ::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+  text-align: start;
+}
+section .consultation form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  text-align: start;
+}
+section .consultation form ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+  text-align: start;
+}
+section .consultation form :-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+  text-align: start;
+}
+section .consultation form div {
+  width: 700px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 30px;
+}
+section .consultation form div label {
+  color: #fff;
+  padding-left: 10px;
+}
+section .consultation form div label a {
+  color: #fff;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
