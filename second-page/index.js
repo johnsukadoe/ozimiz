@@ -62,11 +62,12 @@ const modalSendedEmail = document.querySelector(".modal-sended-email");
 
 
 window.onclick = function(event) {
-    if (event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
+    if (event.target == modalEnroll || event.target == modalSendedEmail || event.target == modalLogin || event.target == modalSignin || event.target == modalTroubleAccount) {
         modalLogin.style.display = "none";
         modalSignin.style.display = "none";
         modalTroubleAccount.style.display="none";
         modalSendedEmail.style.display="none";
+        modalEnroll.style.display="none";
     }
 }
 
@@ -110,3 +111,12 @@ function countdown(days, hours, minutes, seconds) {
         }
 
         countdown(2, 5, 30, 10);
+
+
+const modalEnroll = document.querySelector(".modal-enroll");
+const sendBtn = document.querySelector("#sendBtn");
+
+sendBtn.addEventListener("click", handlemodalEnroll);
+function handlemodalEnroll(){
+    modalEnroll.style.display = "block";
+}
